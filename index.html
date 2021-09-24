@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet" type="text/css">
+    <title>Flex Panels</title>
+</head>
+<body>
+
+    <div class="panels">
+        <div class="panel panel1">
+            <p>Hey</p>
+            <p>Let's</p>
+            <p>Dance</p>
+        </div>
+        <div class="panel panel2">
+            <p>Give</p>
+            <p>Take</p>
+            <p>Receive</p>
+        </div>
+        <div class="panel panel3">
+            <p>Expreience</p>
+            <p>It</p>
+            <p>Today</p>
+        </div>
+        <div class="panel panel4">
+            <p>Give</p>
+            <p>All</p>
+            <p>You can</p>
+        </div>
+        <div class="panel panel5">
+            <p>Life</p>
+            <p>In</p>
+            <p>Motion</p>
+        </div>
+      </div>
+
+
+    <style>
+html{
+    box-sizing: border-box;
+    background: #e8ff1c96;
+    font-family: 'helvetica neue' ;
+    font-size:20px;
+    font-weight: 200;
+}
+body{
+    margin:0;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+.panels{
+    min-height: 100vh;
+    overflow: hidden;
+    display:flex;
+
+}
+.panel{
+    background:#a025e285;
+    box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+    color:white;
+    text-align: center;
+    align-items: center;
+
+    transition: 
+    font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    background 0.2s;
+    font-size: 20px;
+    background-size: cover;
+    background-position: center;
+    flex:1; /*each of them show display extra space among each other*/
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.panel1{
+    background-image:url(https://w3programmers.com/bangla/wp-content/uploads/2018/12/css-backgrounds.jpg)
+}
+.panel2{
+    background-image:url(https://lh3.googleusercontent.com/AjwTD0e2cLscrn59aQvlxZk0AMCwWr2e0dBqK_mwWopZm2J1arcRrowCL_XMPVMv8FbbFAGU6kk1Kq2hjeAnlQVf4IGhl8sp4XUVKw9jDh5ljWU4PCkXYUHnIe58Pc1XZ9eRAvmJmYYY5f3f27w_N4JD00Zns21hoL8VFDk5ysN0eXKwjra_ywuyGZk4Ot7tGYaNt06_QVUWqSCiebJeRM0Wcc9tn-qU-lIRij7J2TDRY9eKzUxxbNvXOJbs5DG_usrMm5C9G6j-1_xtYiIsem7f_TauXeNWSr5FPRTLLegqe5VRaV4umTpTBy8fqTEhO5hiAwPOkhvsbkddnOrJBaeCDzQJfefYc_MZlCFtXKjUbTfvCmCRPE0KijZc3VgfHkTiupCA-1SXoAEhSj8Sa94zZ0F1dCTiASWnqbE5g_ue5ynUdqL2lcQzzNWTmsZ6wx8z2J2vx_HHuDFggOgwG5u4NQxwFFtYYw88sRIUt1jNv11DpkjTSAtEmI4CBgogUUx0BVq4X8HZeu9lJnJOgwzZ73-mCXyJ4mrOqhrNIWaK9cw9K8_ubSUC8huSf5ZCTKK_YJ4w08RuWZsn9Wo51vsUVD4F6Vgq3KhtU6pTW7_uP3pGi2tNx0IeNYI413miScBHGwn-Yx4l1l3UOrPaPwcnjogIS21SR9u8CMwg3yKhw4JMtsVAGeaTgBq9E6m6veZ0bCF_VNnnV3Fe691E4Wki=w1328-h880-no?authuser=0)
+}
+.panel3{
+    background-image:url(https://lh3.googleusercontent.com/-aoASDwm-RZSdXPiMgnpGUgI3OGi70ypQmv_6NoniaRVAczbvVD3XINsl5vLd52AYIS7a31z0kZN-vfm_VTeCahqhELbbmCPZWSKzgYp51clRHd1rB5nf32Dqlvdez1wMC2pdeL4sXA34HKQbAMfdPJ-ypnJDe5uUZ-JHX4SR4H10jjCh15B3iPivpwNhpCdBvG6L2dUQd7fscByiYAMZ20cbvH6vxsS7E3n9mOS13BxSXXMi0SrjUvefs_ZZRVkEpJ6KGXrEyyS-3PNyvMCuEPxtdjaegOBSKtrluFV7F6kh9zykTA9LyTQISBrp3WdsgfBSDW7wJ7PY_cXbv7ysKSRSF9SjjBuyGOWC3oaeKF7FJPqzOjThycXqX-z-Ix2MvO8nF0erv9ABNnsEXnksGFLRxoKod2f-iFtnDtsqUbPG17sdS65o3KvESpVFQZTI8ozeGFTz1k_z_3-B2Psr_f_oMPqMllUEur7BY6MU04DHIMYHegVIWOU3vQnNlIwE4zVh1nnAU6SkkQwuv1QfyXiZKyUr_CrpYB0GAozrXF0JSUJXPYdC9Wb8f0Vxeot0iWtRUhY2w523PnqYLFKGgq8AHtccn9b1FLRJgBJAELrtvkS89AsqvE7F7gjvODELERXaplHdp3_v3IX8pijhlP1DVh1TPhVGfbRcMYee4pA6u2rUbWgNUEgiGUjSzNYJQflgRZzgQdrWXsOF-7rnpH2=w1207-h905-no?authuser=0)
+}
+.panel4{
+    background-image:url(https://lh3.googleusercontent.com/EDBQiBij89Njz1QyKmblzq40nuwJZd7QMr1px5bg3OYreCHQ3VsRmIPFM9573zUS2wnz_d_qRwXC_LBDntgkqL6QMTqsMHBIIGf_E8YNNSNjAmgYlFw7AXK2nOZTGwO4yuN-pr7kE_a56kCrcaqb7B5wqHoKqawdKdpUsdN0k_jFoCWtL__5XmpKFTOGJLfhwnbh_v8bG7-9x83QV6Cgh5QIVj1jSZX22qI4YtFl34mInKSextUmkJMYDae0-6fH_qOX2mr41BWG6tjRhTdtBN0D8NdzAQVMBrGaF-P-W7sGmSPOpuX9Nj1MpSkOTa1STA8KYTD6-p2Ix1nI7AptilDKqTqB3JEEFW6-ntcZjSyrriRJ1cx21_Qh8-5hgWhqZ7Ktg9_An__dKneOb_FF4RxUYu3a5VjjIji93gnb81FQFCK5bxrze9CQwJHXtiUFVHl7VBedANmcq-l3XoUxQd5ZUl70VRNzMXBfQ5A1jXp80Bw8Qt60kzDNbVO0WDlGa6iwHIGqMLW0hhkOEAQo-bbG4iXv86nSeWdG4l_-9HklrGwZrOVTOVeJnMkvOq94Lecxs2HcKNJ_qpNL6A0Iev2J6znYV5PC_FRe8KsFoTEku69xYfg4UH85wos3Q9m0kz4qOSRfo73UNHMx-5A1pBMlTLJISaeQdTPl0_N1MVt4XWMTVPy-2OmgSMwOLGgJFP_IXBKQh9lLf1ekF6I0rTzr=w1328-h880-no?authuser=0)
+}
+.panel5{
+    background-image:url(https://lh3.googleusercontent.com/FEvYldfqvEX8ZTG9Cl-046KljqRAOmiHBCt18OMMsmA8UrpHJilxECIxdwD2fDHcxGXt--wqprRdsZ5woJ4Qrm_XTWKLZ5RQq-B-9lzr3zmsO-XlbNCe8RIx9-dkG-yyQVPiNjaudQhXiJ3IQvJFisGMixN3VcQcltVH88pxgl1TJvult8VE3L1yHVGbChWwYWkinGkGe7-thJDlgjoJ6CL6rdvqQ0AW9TRgNjuwsSFjkKfWKE6w0qvPbPF0yiXsG3UglFJLC9wqbyc0V8urupnOw_3LTS3IfvvUbAeh2W4wX9hZsXhwSzZe_Zhzs7mGQgxaFtf4850MOz7FKn2PXb0rYogyqLnMEq6MUeSedOQFEEgVwpRsYgytc-Wy-ieF89Lbz_hjCkCx4SVWpw9ted8NEAfgkwTNZXdf0UAhfmjRcqWmsEGtJHTvzhvIunAyr9AEnJ8b4d-R21pySLni-n2I_mQIho8kiVuGjt0Ce-LKYO_TSrrEwQDYPDwMTeDKM2n522hENiY-udNQQSXr9laWNrzhA07geEPMXuKXeooBMyCz2llXhD9d9i7vjDzGgwU3Tq8N_Kj35VEMucu3JjOJc1z0zJOoCW2Irzxs1Q9QMGNRrMHwumOZoSuflWOIXLx7d7xNifHw3hriPPJQwSoFa5N7l5FNuHdkJQD68tY2ptcDLi2-cTUNToAIvtxDP0sN20SFQuuYRVUogAT44aFo=w1207-h905-no?authuser=0)
+}
+
+/*flex children-items*/
+
+.panel> *{
+    margin:0;
+    width:100%;
+    transition: transform 0.5s;
+    border:1px solid rgba(255, 0, 0, 0);
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel > *:first-child{transform:translateY(-100%)} /*ilk ve son elementin asagi yukari kayma animasyonunu eklemis olduk*/
+.panel.open-active > *:first-child{transform:translateY(0)} /*animasyon class i */
+.panel > *:last-child{transform:translateY(100%)}
+.panel.open-active > *:last-child{transform:translateY(0)}
+
+.panel p{
+    text-transform: uppercase;
+    font-family: 'Amatic SC',cursive;
+    text-shadow: 0 0 4px rgba(0,0,0,0.72),0 0 14px rgba(0,0,0,0.54);
+    font-size:2em;
+}
+.panel p:nth-child(2){
+    font-size: 4em;
+}
+.panel.open{
+    flex:5;/* open classi ile gelen animasyona 5 times extra room than others özelligi*/
+    font-size: 40px;
+}
+
+.cta{
+    color:white;
+    text-decoration:none ;
+}
+
+
+    </style>
+
+
+    <script>
+
+const panels=document.querySelectorAll('.panel');
+
+function toggleOpen() {
+    this.classList.toggle('open');
+}
+function toggleActive(e) {
+    console.log(e.propertyName);
+    if(e.propertyName.includes('flex')) {
+        this.classList.toggle('open-active');
+    }
+    /*fonksiyona (e) girisi verdik ve hangi degerlerin 
+    transition'a ugradigini görmus olduk debug islemi icin*/
+
+}
+panels.forEach(panel=>panel.addEventListener('click',toggleOpen))
+panels.forEach(panel=>panel.addEventListener('transitionend',toggleActive))
+
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>
